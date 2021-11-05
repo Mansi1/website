@@ -12,11 +12,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-helmet": "^6.1.4",
     "dompurify": "^2.3.3",
     "html-react-parser": "^1.4.0",
     "react": "^17.0.2",
@@ -27,12 +22,21 @@
     "react-typed": "^1.2.0",
     "typescript": "^4.1.2"
   },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "prebuild": "node generate.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pages": "gh-pages -d docs"
   },
   "eslintConfig": {
     "extends": [
