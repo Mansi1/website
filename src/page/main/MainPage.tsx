@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Layout} from "./Layout";
 import {makeStyles} from '@mui/styles';
-import {Button, Theme, Tooltip} from "@mui/material"
+import {Button} from "@mui/material"
 import profileImage from '../../assets/img/profile.jpg'
 import Typed from 'react-typed';
 import {Logos} from "./components/Logos";
@@ -9,7 +9,7 @@ import {getCurrentAge} from "../../function/getCurrentAge";
 import { dispatchCustomEvent } from '@milkscout/react';
 import {REDICE_EVENT_NAME} from "../../customEvents";
 
-const useStyle = makeStyles(({}: Theme) => ({
+const useStyle = makeStyles({
     root: {
         backgroundColor: '#f3ebe3',
         height: 340
@@ -55,7 +55,7 @@ const useStyle = makeStyles(({}: Theme) => ({
         maxWidth: 600,
         margin: "auto"
     }
-}));
+});
 
 export interface MainPageProps {
 
@@ -69,7 +69,7 @@ export const MainPage = (props: MainPageProps) => {
             <div className={classes.root}>
             </div>
             <div className={classes.imageWrapper}>
-                <img className={classes.image} src={profileImage}/>
+                <img className={classes.image} src={profileImage} alt={'Its me Michael Mannseicher'}/>
             </div>
             <div className={classes.headline}>
                 <div>Michael</div>

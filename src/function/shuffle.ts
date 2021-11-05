@@ -3,7 +3,7 @@ export const shuffle = <T>(array: Array<T>): Array<T> =>
     let currentIndex = array.length, randomIndex;
 
     // While there remain elements to shuffle...
-    while (currentIndex != 0) {
+    while (currentIndex !== 0) {
 
         // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
