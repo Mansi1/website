@@ -1,0 +1,1 @@
+export const GITHUB_URL_PROFILE = 'https://github.com/mansi1'

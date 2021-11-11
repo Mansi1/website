@@ -28,7 +28,7 @@ const useStyle = makeStyles({
         textTransform: 'uppercase',
         fontWeight: 300,
         letterSpacing: '4px',
-        fontSize: '3rem',
+        fontSize: '2.8rem',
     },
     subHeadline: {
         fontWeight: 600,
@@ -65,7 +65,6 @@ export const MainPage = (props: MainPageProps) => {
     const classes = useStyle();
     return (<Layout>
         <div>
-
             <div className={classes.root}>
             </div>
             <div className={classes.imageWrapper}>
@@ -79,7 +78,7 @@ export const MainPage = (props: MainPageProps) => {
             <div className={classes.descriptionShort}>
                 {'Ich bin '+ getCurrentAge(18,5,1990) +' Jahre alt und habe an der Hochschule für angewandte Wissenschaften Landshut meinen '}
                 <i>Master in Informatik</i>
-                {' absolviert.'}
+                {' gemacht.'}
             </div>
             <div className={classes.fullStack}>
                 <Typed
