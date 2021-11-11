@@ -6,14 +6,16 @@ import profileImage from '../../assets/img/profile.jpg'
 import Typed from 'react-typed';
 import {Logos} from "./components/Logos";
 import {getCurrentAge} from "../../function/getCurrentAge";
-import { dispatchCustomEvent } from '@milkscout/react';
+import {dispatchCustomEvent, openUrlInNewTab} from '@milkscout/react';
 import {REDICE_EVENT_NAME} from "../../customEvents";
+import {LazyLoadImage} from "react-lazy-load-image-component";
+import {MILKSOCUT_IMAGE_URL, MILKSOCUT_URL} from "../../variables";
 
 const useStyle = makeStyles({
     root: {
         backgroundColor: '#f3ebe3',
         height: 340
-    },  
+    },
     imageWrapper: {
         textAlign: 'center'
     },
@@ -46,14 +48,25 @@ const useStyle = makeStyles({
         textAlign: 'center',
         fontSize: 52
     },
-    technologyHeader:{
+    technologyHeader: {
         fontSize: 18,
         textAlign: "center"
     },
-    technology:{
+    technology: {
         marginTop: 20,
         maxWidth: 600,
         margin: "auto"
+    },
+    coFounder: {
+        marginTop: 40,
+        fontSize: 20,
+        textAlign: "center"
+    },
+    milkScoutImg: {
+        maxWidth: 450,
+        width: '100%',
+        padding: 16,
+        cursor: "pointer"
     }
 });
 
@@ -76,10 +89,15 @@ export const MainPage = (props: MainPageProps) => {
             </div>
 
             <div className={classes.descriptionShort}>
-                {'Ich bin '+ getCurrentAge(18,5,1990) +' Jahre alt und habe an der Hochschule für angewandte Wissenschaften Landshut meinen '}
+                {'Ich bin ' + getCurrentAge(18, 5, 1990) + ' Jahre alt und habe an der Hochschule für angewandte Wissenschaften Landshut meinen '}
                 <i>Master in Informatik</i>
                 {' gemacht.'}
             </div>
+            <div className={classes.coFounder}>
+                <div><b><i>Co-Funder</i></b> und <b><i>Frontend-Engineer</i></b> bei</div>
+                <LazyLoadImage src={MILKSOCUT_IMAGE_URL} effect="blur" className={classes.milkScoutImg} onClick={() => openUrlInNewTab(MILKSOCUT_URL)}/>
+            </div>
+
             <div className={classes.fullStack}>
                 <Typed
                     strings={['Ich bin <b>Full-Stack Entwickler</b>']}
@@ -88,10 +106,11 @@ export const MainPage = (props: MainPageProps) => {
                     loop
                 />
             </div>
-
-            <div className={classes.technologyHeader}>30 zufällige Technologien, Frameworks und Tools mit den ich bereits gearbeitet habe:</div>
+            <div className={classes.technologyHeader}>30 zufällige Technologien, Frameworks und Tools mit den ich
+                bereits gearbeitet habe:
+            </div>
             <div className={classes.technology}>
-              <Logos/>
+                <Logos/>
             </div>
             <div style={{textAlign: 'center', marginTop: 25}}>
                 <Button onClick={() => dispatchCustomEvent(REDICE_EVENT_NAME)}>Erneut Würfeln</Button>
