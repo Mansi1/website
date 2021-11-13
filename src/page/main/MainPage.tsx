@@ -94,7 +94,7 @@ export const MainPage = (props: MainPageProps) => {
                 {' gemacht.'}
             </div>
             <div className={classes.coFounder}>
-                <div><b><i>Co-Funder</i></b> und <b><i>Frontend-Engineer</i></b> bei</div>
+                <div><b><i>Co-Founder</i></b> und <b><i>Frontend-Engineer</i></b> bei</div>
                 <LazyLoadImage src={MILKSOCUT_IMAGE_URL} effect="blur" className={classes.milkScoutImg} onClick={() => openUrlInNewTab(MILKSOCUT_URL)}/>
             </div>
 
