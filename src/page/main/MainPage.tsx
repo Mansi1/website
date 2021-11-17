@@ -44,9 +44,10 @@ const useStyle = makeStyles({
         lineHeight: '25.6px'
     },
     fullStack: {
-        marginTop: 50,
+        marginTop: 20,
+        marginBottom: 20,
         textAlign: 'center',
-        fontSize: 52
+        fontSize: 36
     },
     technologyHeader: {
         fontSize: 18,
@@ -58,15 +59,22 @@ const useStyle = makeStyles({
         margin: "auto"
     },
     coFounder: {
-        marginTop: 40,
+        marginTop: 20,
         fontSize: 20,
         textAlign: "center"
     },
     milkScoutImg: {
-        maxWidth: 450,
+        maxWidth: 350,
         width: '100%',
         padding: 16,
         cursor: "pointer"
+    },
+    projectWrapper: {
+        marginTop: 20,
+        textAlign: 'center'
+    },
+    projectHeader: {
+        fontWeight: "bold"
     }
 });
 
@@ -93,11 +101,34 @@ export const MainPage = (props: MainPageProps) => {
                 <i>Master in Informatik</i>
                 {' gemacht.'}
             </div>
-            <div className={classes.coFounder}>
-                <div><b><i>Co-Founder</i></b> und <b><i>Frontend-Engineer</i></b> bei</div>
-                <LazyLoadImage src={MILKSOCUT_IMAGE_URL} effect="blur" className={classes.milkScoutImg} onClick={() => openUrlInNewTab(MILKSOCUT_URL)}/>
+            <div className={classes.projectWrapper}>
+                <div className={classes.projectHeader}>Einige Projekte</div>
+                <div>
+                    <a target="_blank" rel="noreferrer" href={'https://market.milkscout.eu'}>
+                        MilkScout Markplatz (react, aws)
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" rel="noreferrer" href={'https://sigma-bau.de'}>
+                        SIGΣA plan + bau (springtype, js)
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" rel="noreferrer" href={'https://springtype.org'}>
+                        SpringType (Frontend Framework, ts)
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" rel="noreferrer" href={'https://www.npmjs.com/package/@material-ui-extra/icons'}>
+                        material-ui-extra/icons (react, material-ui v4)
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" rel="noreferrer" href={'https://www.npmjs.com/package/@material-ui-extra/icons'}>
+                        ngFetch (nodejs, js)
+                    </a>
+                </div>
             </div>
-
             <div className={classes.fullStack}>
                 <Typed
                     strings={['Ich bin <b>Full-Stack Entwickler</b>']}
@@ -106,6 +137,7 @@ export const MainPage = (props: MainPageProps) => {
                     loop
                 />
             </div>
+
             <div className={classes.technologyHeader}>30 zufällige Technologien, Frameworks und Tools mit den ich
                 bereits gearbeitet habe:
             </div>
@@ -114,6 +146,11 @@ export const MainPage = (props: MainPageProps) => {
             </div>
             <div style={{textAlign: 'center', marginTop: 25}}>
                 <Button onClick={() => dispatchCustomEvent(REDICE_EVENT_NAME)}>Erneut Würfeln</Button>
+            </div>
+            <div className={classes.coFounder}>
+                <div><b><i>Co-Founder</i></b> und <b><i>Frontend-Engineer</i></b> bei</div>
+                <LazyLoadImage src={MILKSOCUT_IMAGE_URL} effect="blur" className={classes.milkScoutImg}
+                               onClick={() => openUrlInNewTab(MILKSOCUT_URL)}/>
             </div>
         </div>
     </Layout>);
