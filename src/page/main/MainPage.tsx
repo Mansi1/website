@@ -22,6 +22,7 @@ const useStyle = makeStyles({
     image: {
         maxWidth: 370,
         borderRadius: 200,
+        width: '100%',
         border: '10px solid #fff',
         margin: '-280px auto 0',
     },
@@ -30,7 +31,7 @@ const useStyle = makeStyles({
         textTransform: 'uppercase',
         fontWeight: 300,
         letterSpacing: '4px',
-        fontSize: '2.8rem',
+        fontSize: '40px',
     },
     subHeadline: {
         fontWeight: 600,
