@@ -14,6 +14,7 @@ const useStyle = makeStyles({
     position: "fixed",
     right: 0, 
     top: 0,
+    zIndex: 1,
     cursor: "pointer"
   }
 });
