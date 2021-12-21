@@ -115,7 +115,7 @@ export const MainPage = (props: MainPageProps) => {
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" rel="noreferrer" href={'https://springtype.org'}>
+                    <a target="_blank" rel="noreferrer" href={'https://github.com/springtype-org'}>
                         SpringType (Frontend Framework, ts)
                     </a>
                 </div>
