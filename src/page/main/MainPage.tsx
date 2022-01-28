@@ -120,8 +120,13 @@ export const MainPage = (props: MainPageProps) => {
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" rel="noreferrer" href={'https://www.npmjs.com/package/@material-ui-extra/icons'}>
-                        material-ui-extra/icons (react, material-ui v4)
+                    <a target="_blank" rel="noreferrer" href={'https://mansi1.github.io/mdi-react-icons/mui'}>
+                        material-ui-extra/icons (react, material-ui v4/ v5)
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" rel="noreferrer" href={'https://mansi1.github.io/material-ui-v5-starter/'}>
+                        material-ui v5 starter
                     </a>
                 </div>
                 <div>
