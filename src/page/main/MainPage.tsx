@@ -130,7 +130,7 @@ export const MainPage = (props: MainPageProps) => {
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" rel="noreferrer" href={'https://www.npmjs.com/package/@material-ui-extra/icons'}>
+                    <a target="_blank" rel="noreferrer" href={'https://www.npmjs.com/package/ng-fetch'}>
                         ngFetch (nodejs, js)
                     </a>
                 </div>
