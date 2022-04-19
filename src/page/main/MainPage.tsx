@@ -133,7 +133,11 @@ export const MainPage = (props: MainPageProps) => {
                     <a target="_blank" rel="noreferrer" href={'https://www.npmjs.com/package/ng-fetch'}>
                         ngFetch (nodejs, js)
                     </a>
-                </div>
+                </div> <div>
+                <a target="_blank" rel="noreferrer" href={'https://mansi1.github.io/minesweeper/'}>
+                    Minesweeper
+                </a>
+            </div>
             </div>
             <div className={classes.fullStack}>
                 <Typed
