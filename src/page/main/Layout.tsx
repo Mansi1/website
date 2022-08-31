@@ -16,6 +16,8 @@ const useStyle = makeStyles({
     top: 0,
     zIndex: 1,
     cursor: "pointer"
+  }, spacer: {
+    height: 30
   }
 });
 
@@ -28,5 +30,6 @@ export const Layout = ({children}: PropsWithChildren<unknown>) => {
              alt={'Stalk me on GitHub logo'}
         />
       {children}
+    <div className={classes.spacer}/>
   </Container>);
 };
