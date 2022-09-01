@@ -13,18 +13,19 @@ import {MILKSOCUT_IMAGE_URL, MILKSOCUT_URL} from "../../variables";
 
 const useStyle = makeStyles({
     root: {
+        margin: -25,
         backgroundColor: '#f3ebe3',
-        height: 340
+        height: 300
     },
     imageWrapper: {
         textAlign: 'center'
     },
     image: {
-        maxWidth: 370,
+        maxWidth: 300,
         borderRadius: 200,
         width: '100%',
         border: '10px solid #fff',
-        margin: '-280px auto 0',
+        margin: '-190px auto 0',
     },
     headline: {
         textAlign: "center",
