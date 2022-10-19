@@ -6,7 +6,7 @@ const exportPath = 'src/page/main/components'
 
 const files = fs.readdirSync(importPath);
 
-const filesWithMetaData = files.map(file => ({
+const filesWithMetaData = files.filter(f => f.endsWith('.svg') || f.endsWith('.png')).map(file => ({
     name: file.split('-').join(' ').replace('.svg', '').replace('.png', ''),
     importName: file.replace('.svg', '').replace('.png','').split('-').reduce((p, c, i) => {
         if (i === 0) {
