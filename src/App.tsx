@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async"
 import { ThemeProvider } from "./theme/ThemeProvider"
 import { StyledEngineProvider } from "@mui/material/styles"
 import {MainPage} from "./page/main/MainPage";
+import {KoFiButton} from "./components/KoFiButton";
 
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
                 <MainPage />
             </ThemeProvider>
           </StyledEngineProvider>
+            <KoFiButton username={"mansi1"} label={"Support me"} />
         </HelmetProvider>
   )
 }
