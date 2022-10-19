@@ -9,7 +9,18 @@ export interface KoFiButtonProps {
     color?: string
     endpoint?: string;
 }
-
+const getIframeHeight= () => {
+   const rect =  document.body.getBoundingClientRect();
+   const height = (rect?.height || 0) - (100 +37);
+   
+   if(height > 677){
+       return 677;
+   }
+   if(height > 400){
+       return height
+   }
+   return 400
+}
 export const KoFiButton = ({
                                username,
                                label,
@@ -33,7 +44,7 @@ export const KoFiButton = ({
                 }}>
                     <iframe title='iframe ko-fi' src={endpoint + username + '/?hidefeed=true&widget=true&embed=true'} style={{
                         width: 328,
-                        height: 400,
+                        height: getIframeHeight(),
                         border: 0
                     }}/>
                     <div style={{
