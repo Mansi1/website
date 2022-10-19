@@ -17,7 +17,7 @@ const useStyle = (
   const mediaQueries: Array<{ media: string; value: CSSProperties }> =
     Object.entries(breakpoints).map(([breakpoint, value]) => {
       const { from, to } = breakpointDimensions[breakpoint as Breakpoint]
-      const width: number = (1 / 12) * value
+      const width: number = (1 / 12) * value!
       return {
         media: `@media (min-width:${from}px)${
           to ? ` and (max-width:${to}px)` : ""
