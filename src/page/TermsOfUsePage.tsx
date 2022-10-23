@@ -413,21 +413,21 @@ export const TermsOfUsePage = (): ReactElement => {
           Google findet dabei nicht statt.
         </p>
         <p>
-          Weitere Informationen zu Google Fonts finden Sie unter
+          Weitere Informationen zu Google Fonts finden Sie unter{" "}
           <a
             href="https://developers.google.com/fonts/faq"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://developers.google.com/fonts/faq
+            google fonts faq
           </a>
-          und in der Datenschutzerkl&auml;rung von Google:
+          und in der Datenschutzerkl&auml;rung von Google:{" "}
           <a
             href="https://policies.google.com/privacy?hl=de"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://policies.google.com/privacy?hl=de
+            policies google.com
           </a>
           .
         </p>
