@@ -5,6 +5,7 @@ import { MAIN_ROUTE } from "../../routes";
 import { openUrlInNewTab } from "@milkscout/react";
 import stalkMeOnGitHub from "../../assets/img/stalkMeOnGithub.svg";
 import profileImage from "../../assets/img/profile.jpg";
+import { GITHUB_URL_PROFILE } from "../../variables";
 
 const useStyle = makeStyles(({ palette }) => ({
   main: { cursor: "pointer" },
