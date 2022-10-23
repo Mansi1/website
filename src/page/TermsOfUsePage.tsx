@@ -395,13 +395,13 @@ export const TermsOfUsePage = (): ReactElement => {
         </p>
         <p>
           Weitere Informationen &uuml;ber Datenschutz bei YouTube finden Sie in
-          deren Datenschutzerkl&auml;rung unter:
+          deren Datenschutzerkl&auml;rung unter:{" "}
           <a
             href="https://policies.google.com/privacy?hl=de"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://policies.google.com/privacy?hl=de
+            policies google
           </a>
           .
         </p>
@@ -420,7 +420,7 @@ export const TermsOfUsePage = (): ReactElement => {
             rel="noopener noreferrer"
           >
             google fonts faq
-          </a>
+          </a>{" "}
           und in der Datenschutzerkl&auml;rung von Google:{" "}
           <a
             href="https://policies.google.com/privacy?hl=de"
