@@ -1,1 +1,1 @@
-export type UnknownProps = { [otherProps: string]: any }
+export type UnknownProps = { [otherProps: string]: any };
